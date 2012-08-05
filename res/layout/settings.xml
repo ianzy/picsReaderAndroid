@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+		style="@style/ImageContainer"
+		android:layout_weight="1">
+
+    <CheckBox
+        android:id="@+id/ninegag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9gag Feed"  
+        android:textColor="#FF000000"
+        android:textSize="@dimen/text_size_medium"
+        android:onClick="onCheckBoxClicked"
+        android:hint="http://tumblr.9gag.com/rss"/>
+
+    <CheckBox
+        android:id="@+id/imgur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imgur Feed" 
+        android:textColor="#FF000000"
+        android:textSize="@dimen/text_size_medium"
+        android:onClick="onCheckBoxClicked"
+        android:hint="http://feeds.feedburner.com/ImgurGallery?format=xml" />
+    
+    <CheckBox
+        android:id="@+id/jandan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jandan Pic Feed" 
+        android:textColor="#FF000000"
+        android:textSize="@dimen/text_size_medium"
+        android:onClick="onCheckBoxClicked"
+        android:hint="http://jandan.net/pic/feed"/>
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dip"
+    	android:layout_weight="0">
+    	    <Button
+		        android:id="@+id/save"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Save" 
+		        android:layout_weight="0.25"
+		        android:onClick="onSaveClicked"/>
+		
+		    <Button
+		        android:id="@+id/cancel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Cancel" 
+		        android:layout_weight="0.25"
+		        android:onClick="onCancelClicked"/>
+    </LinearLayout>
+
+
+</LinearLayout>

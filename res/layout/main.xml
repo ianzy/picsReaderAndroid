@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zy.android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/titles"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:padding="10dip"
+        android:background="@drawable/actionbar_background"
+        app:footerColor="#FF00CCFF"
+        app:footerLineHeight="1dp"
+        app:footerIndicatorHeight="3dp"
+        app:footerIndicatorStyle="underline"
+        app:textColor="#AAFFFFFF"
+        app:selectedColor="#FFFFFFFF"
+        app:selectedBold="true" />
+    
+	<android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+    
+
+	<com.google.ads.AdView android:id="@+id/adView"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  ads:adUnitId="a14f7bca93c5df4"
+	                  ads:adSize="BANNER"
+	                  ads:testDevices="TEST_EMULATOR, 9CA6197E2AF7D34A192799C19F276BF4"
+	                  ads:loadAdOnCreate="true"/>
+<!-- 	<LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0">
+	    <ImageButton android:id="@+id/retweet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_action_rt_off" android:layout_weight="0.25" />
+        <ImageButton android:id="@+id/share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_action_share" android:layout_weight="0.25" 
+            android:onClick="onShareClicked"/>
+    </LinearLayout> -->
+</LinearLayout>

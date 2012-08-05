@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="ActionBarTheme" parent="Theme.Sherlock.Light">
+	    <item name="actionModeBackground">@drawable/actionbar_compat_background</item>
+	    <item name="abBackground">#FF000000</item>
+	    <item name="abTitleTextStyle">@style/abTextColor</item>
+	    <item name="android:windowBackground">@color/bg_list</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/link_color</item>
+	</style>
+    <style name="Theme" parent="@android:style/Theme.Light">
+        <item name="android:windowBackground">@color/bg_list</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    
+	<style name="ButtonBar">
+        <item name="android:background">@drawable/btn_bar_bg</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/standard_spacing</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginRight">@dimen/standard_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/standard_spacing</item>
+    </style>
+    
+	<style name="ImageContainer">
+        <item name="android:background">@drawable/whiterounded_bg</item>
+        <item name="android:layout_marginLeft">@dimen/standard_spacing</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginRight">@dimen/standard_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/standard_spacing</item>
+        <item name="android:padding">10dip</item>
+    </style>
+    
+	<style name="abTextColor">
+        <item name="android:id">@id/actionbar_compat_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.00001</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+	<style name="Dot">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/dot</item>
+        <item name="android:text">@string/dot</item>
+    </style>
+    
+</resources>

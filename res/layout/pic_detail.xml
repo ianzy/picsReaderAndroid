@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        style="@style/ImageContainer"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	        >
+	        <ImageView
+	            android:id="@+id/pic_detail_image"
+	            android:src="@drawable/loadingtextbig"
+	            android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent" />
+	        <TextView 
+	            android:id="@+id/pic_detail_title"
+	            android:text="title"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"/>
+	        
+	        <LinearLayout 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="5dip">
+			    <!-- <ImageButton android:id="@+id/retweet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_action_rt_off" android:layout_weight="0.25" /> -->
+			    <Button
+		        android:id="@+id/open"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Larger Pic" 
+		        android:layout_weight="0.25"
+		        android:onClick="onPicClicked"/>
+		        <ImageButton android:id="@+id/share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_action_share" android:layout_weight="0.25" 
+		            android:onClick="onShareClicked"/>
+		    </LinearLayout>
+	    </LinearLayout>
+<!-- 	    <LinearLayout 
+	        style="@style/ButtonBar"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+ 	        <TextView
+	            android:id="@+id/pic_detail_description"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:text="description"/>
+	    </LinearLayout> -->
+	    
+	<!-- <include android:id="@android:id/empty" layout="@layout/empty_layout" /> -->
+	</LinearLayout>
+</ScrollView>
