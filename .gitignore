@@ -3,3 +3,7 @@ bin/
 libs/.DS_Store
 gen/
 .classpath
+.settings
+project.properties
+proguard.cfg
+.project
